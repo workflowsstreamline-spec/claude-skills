@@ -1,0 +1,6 @@
+freshtechbro/claudedesignskills core-3d-animation@claude-design-skillstack
+affaan-m/ECC ecc@ecc
+DietrichGebert/ponytail ponytail@ponytail
+obra/superpowers superpowers@superpowers-dev
+nextlevelbuilder/ui-ux-pro-max-skill ui-ux-pro-max@ui-ux-pro-max-skill
+bradautomates/claude-video watch@claude-video
