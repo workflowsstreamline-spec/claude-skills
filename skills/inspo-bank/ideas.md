@@ -23,4 +23,4 @@ Status: `saved` (not started) / `planned` / `built`.
 - What: login page where pulling a lamp lights up and reveals the form.
 - Doable: yes, easy. Rebuild in vanilla HTML/CSS/JS, about an afternoon. No need to comment for the creator's code.
 - Best fit: aditya-portfolio (showcase piece) or the conference-poll host/admin login. Too playful for casedesk, Thakar, or dsa-desk. house-theory-site has no login; reuse the pull-cord lamp as the day/dusk switch instead.
-- Status: saved
+- Status: built on house-theory-site as the day/dusk pull cord (commit be034ed, live 2026-10-16)
