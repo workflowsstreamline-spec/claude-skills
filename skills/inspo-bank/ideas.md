@@ -9,7 +9,7 @@ Status: `saved` (not started) / `planned` / `built`.
 - What: animated character on a website that turns to follow the cursor and changes expression.
 - Doable: yes, easy. Use KOBOYO's React component, or hand-build in vanilla CSS/JS for no-build sites. Effort is mostly drawing the character.
 - Best fit: billion-hair-bookings (playful salon brand). Maybe indirepair-site (small repair-bot), but only if it stays premium. Not for legal or CA tools.
-- Status: saved
+- Status: built on billion-hair-bookings as js/mascot.js (vanilla SVG, local only, 2026-10-16)
 
 ### AI "visual hook" for property videos
 - Link: https://www.instagram.com/reel/DefB3xJII0J/ (k_bilyi3). Judged from caption + creator's other posts, video not viewed.
