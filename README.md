@@ -5,6 +5,7 @@ Every Claude Code skill and slash command from `~/.claude`, plus the list of ins
 - `skills/` - copy of `~/.claude/skills`
 - `commands/` - copy of `~/.claude/commands`
 - `plugins.txt` - one line per plugin: `<github repo> <plugin>@<marketplace>`
+- `docs/` - setup guides that need more than a plugin install, e.g. [universal-modder](docs/universal-modder-setup.md) on the gaming PC
 
 ## New machine
 
