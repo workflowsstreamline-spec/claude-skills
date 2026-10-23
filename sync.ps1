@@ -49,12 +49,14 @@ $shared = foreach ($dir in Get-ChildItem $agents -Directory) {
 }
 $shared | Set-Content "$repo\agents-skills.txt" -Encoding ascii
 
-# Plugins already live in their own GitHub repos, so record where they come from instead of copying them
+# Plugins already live in their own GitHub repos, so record where they come from instead of copying them.
+# Merged with the existing list, not overwritten: plugins added from other machines must survive this sync.
 $markets = Get-Content "$Claude\plugins\known_marketplaces.json" -Raw | ConvertFrom-Json
 $plugins = Get-Content "$Claude\plugins\installed_plugins.json" -Raw | ConvertFrom-Json
-$plugins.plugins.PSObject.Properties.Name | Sort-Object | ForEach-Object {
+$here = $plugins.plugins.PSObject.Properties.Name | ForEach-Object {
     "$($markets.($_.Split('@')[1]).source.repo) $_"
-} | Set-Content "$repo\plugins.txt" -Encoding ascii
+}
+@(Get-Content "$repo\plugins.txt") + $here | Sort-Object -Unique | Set-Content "$repo\plugins.txt" -Encoding ascii
 
 git -C $repo add -A
 git -C $repo diff --cached --quiet
