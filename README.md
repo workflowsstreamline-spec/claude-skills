@@ -7,6 +7,7 @@ Every Claude Code skill and slash command from `~/.claude`, plus the list of ins
 - `plugins.txt` - one line per plugin: `<github repo> <plugin>@<marketplace>`
 - `agents-skills.txt` - Codex skills (`~/.agents/skills`) identical to one in `skills/`, by name
 - `agents-skills/` - Codex skills that differ from their Claude copy or exist only for Codex
+- `docs/` - setup guides that need more than a plugin install, e.g. [universal-modder](docs/universal-modder-setup.md) on the gaming PC
 
 ## New machine
 
